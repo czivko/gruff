@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-require File.dirname(__FILE__) + "/gruff_test_case"
+require File.expand_path("../gruff_test_case",__FILE__)
 
 class TestGruffDot < GruffTestCase
 
@@ -215,7 +215,7 @@ class TestGruffDot < GruffTestCase
   def test_custom_theme
     g = Gruff::Dot.new
     g.title = "Custom Theme"
-    g.font = File.expand_path('CREABBRG.TTF', ENV['MAGICK_FONT_PATH'])
+    #g.font = File.expand_path('CREABBRG.TTF', ENV['MAGICK_FONT_PATH'])
     g.title_font_size = 60
     g.legend_font_size = 32
     g.marker_font_size = 32
