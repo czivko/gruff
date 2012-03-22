@@ -218,7 +218,7 @@ module Gruff
 
       @scale = @columns / @raw_columns
 
-      vera_font_path = File.expand_path('Vera.ttf', ENV['MAGICK_FONT_PATH'])
+      vera_font_path = File.expand_path('Verdana.ttf', "/Library/Fonts/")
       @font = File.exists?(vera_font_path) ? vera_font_path : nil
 
       @marker_font_size = 21.0

@@ -3,7 +3,7 @@ require 'hoe'
 $:.unshift(File.dirname(__FILE__) + "/lib")
 require 'gruff'
 
-Hoe.new('Gruff', Gruff::VERSION) do |p|
+Hoe.spec('Gruff' ) do |p|
   p.name = "gruff"
   p.author = "Geoffrey Grosenbach"
   p.description = "Beautiful graphs for one or multiple datasets. Can be used on websites or in documents."
