@@ -1,4 +1,4 @@
-# require File.dirname(__FILE__) + "/gruff_test_case"
+# require File.expand_path("../gruff_test_case",__FILE__)
 # 
 # class TestGruffBullet < GruffTestCase
 # 
